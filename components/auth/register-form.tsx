@@ -18,7 +18,7 @@ import { Button } from '../ui/button';
 import { CardWrapper } from "@/components/auth/card-wrapper"
 import { FormError } from '../form-error';
 import { FormSuccess } from '../form-success';
-import { register } from '@/app/actions/register';
+import { register } from '@/actions/register';
 
 const RegisterForm = () => {
   const [error, setError] = useState<string | undefined>("");
@@ -70,7 +70,6 @@ const RegisterForm = () => {
                         <Input
                           {...field}
                           placeholder="John Doe"
-                          type="email"
                           disabled={isPending}
                         />
                       </FormControl>

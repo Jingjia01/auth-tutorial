@@ -18,7 +18,7 @@ import { Button } from '../ui/button';
 import { CardWrapper } from "@/components/auth/card-wrapper"
 import { FormError } from '../form-error';
 import { FormSuccess } from '../form-success';
-import { login } from '@/app/actions/login';
+import { login } from '@/actions/login';
 
 const LoginForm = () => {
   const [error, setError] = useState<string | undefined>("");
